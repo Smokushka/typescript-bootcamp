@@ -7,10 +7,16 @@
 
 // const result = add(number1, number2)
 
-const person = {
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    role: [number,string]
+} = {
     name: 'Alex',
     age: 35,
-    hobbies: ['Guitar', 'Tennis']
+    hobbies: ['Guitar', 'Tennis'],
+    role: [1,'admin']
 }
 let favouriteActivities: string[]
 

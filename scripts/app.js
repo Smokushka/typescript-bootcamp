@@ -7,7 +7,8 @@
 var person = {
     name: 'Alex',
     age: 35,
-    hobbies: ['Guitar', 'Tennis']
+    hobbies: ['Guitar', 'Tennis'],
+    role: [1, 'admin']
 };
 var favouriteActivities;
 console.log(person.name);
