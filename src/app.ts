@@ -1,27 +1,15 @@
-// function add(num1: number, num2: number) {
-//     return num1 + num2
-// }
-
-// const number1 = 5
-// const number2 = 2.3
-
-// const result = add(number1, number2)
-
-const person: {
-    name: string;
-    age: number;
-    hobbies: string[];
-    role: [number,string]
-} = {
-    name: 'Alex',
-    age: 35,
-    hobbies: ['Guitar', 'Tennis'],
-    role: [1,'admin']
+function combine(input1: number | string, input2: number | string) {
+    let result
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2
+    } else {
+        result = input1.toString() + input2.toString()
+    }
+    return result
 }
-let favouriteActivities: string[]
 
-console.log(person.name)
+const combinedAges = combine(20,56)
+console.log(combinedAges)
 
-for (const hobby of person.hobbies) {
-    console.log(hobby.toUpperCase())
-}
+const combinedNames = combine('Alex','Lisa')
+console.log(combinedNames)

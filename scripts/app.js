@@ -1,18 +1,14 @@
-// function add(num1: number, num2: number) {
-//     return num1 + num2
-// }
-// const number1 = 5
-// const number2 = 2.3
-// const result = add(number1, number2)
-var person = {
-    name: 'Alex',
-    age: 35,
-    hobbies: ['Guitar', 'Tennis'],
-    role: [1, 'admin']
-};
-var favouriteActivities;
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toUpperCase());
+function combine(input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 }
+var combinedAges = combine(20, 56);
+console.log(combinedAges);
+var combinedNames = combine('Alex', 'Lisa');
+console.log(combinedNames);
